@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "f5game-match",
-    "slug": "f5game-match",
-    "version": "1.0.0",
+    "name": "Picture Match",
+    "slug": "Brain-Match",
+    "version": "2.0.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -14,20 +14,38 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-1963334904140891~1474795556"
+      }
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-1963334904140891~1474795556"
+      },
+      "package": "com.f5game.memory",
+      "versionCode": 9
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyDDE1rY3X-Mp2w_Os-8_KDw1AaHvXnDDAM",
+          "authDomain": "f5-game-match.firebaseapp.com",
+          "projectId": "f5-game-match",
+          "storageBucket": "f5-game-match.appspot.com",
+          "messagingSenderId": "222560518609",
+          "appId": "1:222560518609:web:c2eedd1211a93d64bae0f0",
+          "measurementId": "G-8YN1HY3YTP"
+        }
+      }
     }
   }
 }
